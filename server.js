@@ -23,12 +23,12 @@ app.get('/', (req, res) => {
 
   const component = <App fallbackScreenClass={fallbackScreenClass} />;
   const content = ReactDomServer.renderToString(component);
-
+  const title = "Spelman Colors - Official RGB Color Code for Spelman"
   res.send(`
     <!DOCTYPE html>
     <html>
       <head>
-        <title>React SSR Example</title>
+        <title>${title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </head>
       <body>
